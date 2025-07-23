@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Mind - Professional Psychotherapy Services</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-pattern {
+            background-color: #f9fafb;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a7f3d0' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .testimonial-gradient {
+            background: linear-gradient(90deg, #4ade80 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-emerald-600 text-2xl font-bold">Serenity<span class="text-blue-600">Mind</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="px-3 py-2 text-gray-700 hover:text-emerald-600 transition duration-300">Home</a>
+                    <a href="#services" class="px-3 py-2 text-gray-700 hover:text-emerald-600 transition duration-300">Services</a>
+                    <a href="#therapists" class="px-3 py-2 text-gray-700 hover:text-emerald-600 transition duration-300">Our Therapists</a>
+                    <a href="#testimonials" class="px-3 py-2 text-gray-700 hover:text-emerald-600 transition duration-300">Testimonials</a>
+                    <a href="#contact" class="px-3 py-2 text-gray-700 hover:text-emerald-600 transition duration-300">Contact</a>
+                    <a href="#appointment" class="bg-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700 transition duration-300">Book Appointment</a>
+                </div>
+                <div class="flex md:hidden items-center">
+                    <button type="button" class="text-gray-500 hover:text-emerald-600 focus:outline-none" id="mobile-menu-button">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md">Services</a>
+                <a href="#therapists" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md">Our Therapists</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md">Contact</a>
+                <a href="#appointment" class="block px-3 py-2 text-base font-medium bg-emerald-600 text-white rounded-md hover:bg-emerald-700">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span>Your Journey to</span>
+                        <span class="text-emerald-600 block lg:inline"> Mental Wellbeing</span>
+                    </h1>
+                    <p class="mt-3 max-w-md mx-auto lg:mx-0 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl">
+                        Professional psychotherapy services tailored to your unique needs. Begin your healing journey with our experienced therapists.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#appointment" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 transition duration-300">
+                            Book Your Session
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200 transition duration-300">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="/api/placeholder/600/400" alt="Therapy Session" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Why Choose SerenityMind</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    We provide professional, confidential, and personalized therapy services.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="pt-6">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="p-6">
+                                <div class="inline-flex items-center justify-center p-3 bg-emerald-100 rounded-md">
+                                    <i class="fas fa-certificate text-emerald-600 text-xl"></i>
+                                </div>
+                                <h3 class="mt-4 text-lg font-medium text-gray-900">Licensed Professionals</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    All our therapists are licensed and have extensive experience in various therapeutic approaches.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="p-6">
+                                <div class="inline-flex items-center justify-center p-3 bg-blue-100 rounded-md">
+                                    <i class="fas fa-laptop text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="mt-4 text-lg font-medium text-gray-900">Online & In-Person</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Flexible therapy options to accommodate your schedule and comfort level.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="p-6">
+                                <div class="inline-flex items-center justify-center p-3 bg-emerald-100 rounded-md">
+                                    <i class="fas fa-lock text-emerald-600 text-xl"></i>
+                                </div>
+                                <h3 class="mt-4 text-lg font-medium text-gray-900">Complete Confidentiality</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Your privacy is our priority. All sessions and information are kept strictly confidential.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Our Services</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    We offer a wide range of therapeutic services to address your unique needs.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-emerald-500 rounded-md p-3">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Individual Therapy</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    One-on-one sessions focused on your personal goals and challenges. We address anxiety, depression, trauma, and more.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                    <i class="fas fa-users text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Couples Therapy</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    Improve communication and resolve conflicts with your partner. Build a stronger, healthier relationship together.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-emerald-500 rounded-md p-3">
+                                    <i class="fas fa-home text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Family Therapy</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    Address family dynamics and improve relationships between family members of all ages.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                    <i class="fas fa-brain text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Cognitive Behavioral Therapy</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    Evidence-based approach to identify and change negative thought patterns and behaviors.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-emerald-500 rounded-md p-3">
+                                    <i class="fas fa-heart text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Trauma Therapy</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    Specialized approaches to help you process and heal from traumatic experiences.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                    <i class="fas fa-spa text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Mindfulness Practices</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    Learn techniques to stay present, reduce stress, and improve overall wellbeing.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapists Section -->
+    <section id="therapists" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Meet Our Therapists</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    Our team of experienced and compassionate professionals is here to support you.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <img src="/api/placeholder/300/300" alt="Dr. Sarah Johnson" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-gray-900">Dr. Sarah Johnson</h3>
+                            <p class="text-sm text-emerald-600">Clinical Psychologist</p>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Specializes in anxiety, depression, and trauma recovery with 15+ years of experience.
+                            </p>
+                            <div class="mt-4 flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <img src="/api/placeholder/300/300" alt="Dr. Michael Chen" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-gray-900">Dr. Michael Chen</h3>
+                            <p class="text-sm text-emerald-600">Marriage & Family Therapist</p>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Expert in couples therapy and family dynamics with a focus on communication.
+                            </p>
+                            <div class="mt-4 flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <img src="/api/placeholder/300/300" alt="Dr. Emily Rodriguez" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-gray-900">Dr. Emily Rodriguez</h3>
+                            <p class="text-sm text-emerald-600">CBT Specialist</p>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Focused on cognitive-behavioral therapy approaches for anxiety and mood disorders.
+                            </p>
+                            <div class="mt-4 flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white overflow-hidden shadow rounded-lg">
+                        <img src="/api/placeholder/300/300" alt="Dr. James Wilson" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-gray-900">Dr. James Wilson</h3>
+                            <p class="text-sm text-emerald-600">Trauma Specialist</p>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Specialized in EMDR and trauma-focused therapies with 12 years of experience.
+                            </p>
+                            <div class="mt-4 flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-emerald-600">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="appointment" class="bg-emerald-700 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="lg:flex">
+                    <div class="lg:w-1/2 bg-emerald-600 p-8 lg:p-12">
+                        <h2 class="text-2xl font-bold text-white sm:text-3xl">Ready to Start Your Journey?</h2>
+                        <p class="mt-4 text-lg text-emerald-100">
+                            Book your first session today. Our team is ready to support you on your path to mental wellbeing.
+                        </p>
+                        <div class="mt-8">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-check-circle text-white text-lg"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h3 class="text-lg font-medium text-white">Flexible Scheduling</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-check-circle text-white text-lg"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h3 class="text-lg font-medium text-white">Online & In-Person Options</h3>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-check-circle text-white text-lg"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h3 class="text-lg font-medium text-white">Insurance Accepted</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 p-8 lg:p-12">
+                        <h3 class="text-xl font-medium text-gray-900">Book Your Appointment</h3>
+                        <form class="mt-6 space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" name="name" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm p-2 border">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" name="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm p-2 border">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm p-2 border">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700">Service Type</label>
+                                <select id="service" name="service" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm p-2 border">
+                                    <option value="">Select a service</option>
+                                    <option value="individual">Individual Therapy</option>
+                                    <option value="couples">Couples Therapy</option>
+                                    <option value="family">Family Therapy</option>
+                                    <option value="cbt">Cognitive Behavioral Therapy</option>
+                                    <option value="trauma">Trauma Therapy</option>
+                                    <option value="mindfulness">Mindfulness Practices</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                                    Request Appointment
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Client Testimonials</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    Hear from those who have experienced positive change through our services.
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-quote-left text-4xl text-emerald-400"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-base text-gray-500 italic">
+                            "Working with Dr. Johnson has completely transformed my approach to anxiety. I now have the tools to manage stress effectively and enjoy life again."
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <div class="text-yellow-400 flex">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="mt-2 text-sm font-medium text-gray-900">- Rebecca T.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-quote-left text-4xl text-emerald-400"></i>
+                        

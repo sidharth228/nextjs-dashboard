@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rain on Scroll</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      background: #0e0e0e;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 100px 20px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="rain-canvas"></canvas>
+  <div class="content">
+    <h1>Scroll to Enhance the Rain 🌧️</h1>
+    <p>Keep scrolling to see the rain get heavier.</p>
+    <div style="height: 2000px;"></div>
+  </div>
+  <script>
+    const canvas = document.getElementById('rain-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let raindrops = [];
+    let rainDensity = 200;
+
+    function createRaindrops(density) {
+      raindrops = [];
+      for (let i = 0; i < density; i++) {
+        raindrops.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          length: Math.random() * 20 + 10,
+          speed: Math.random() * 4 + 4,
+          opacity: Math.random()
+        });
+      }
+    }
+
+    function drawRain() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = 'rgba(173,216,230,0.5)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+
+      raindrops.forEach(drop => {
+        ctx.moveTo(drop.x, drop.y);
+        ctx.lineTo(drop.x, drop.y + drop.length);
+      });
+
+      ctx.stroke();
+      moveRain();
+    }
+
+    function moveRain() {
+      raindrops.forEach(drop => {
+        drop.y += drop.speed;
+        if (drop.y > canvas.height) {
+          drop.y = 0;
+          drop.x = Math.random() * canvas.width;
+        }
+      });
+    }
+
+    function animate() {
+      drawRain();
+      requestAnimationFrame(animate);
+    }
+
+    createRaindrops(rainDensity);
+    animate();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      createRaindrops(rainDensity);
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const maxDensity = 800;
+      const newDensity = Math.min(200 + Math.floor(scrollY / 5), maxDensity);
+
+      if (newDensity !== rainDensity) {
+        rainDensity = newDensity;
+        createRaindrops(rainDensity);
+      }
+    });
+  </script>
+</body>
+</html>
